@@ -7,11 +7,15 @@
     */
 
     //ENTRADA
-
-
+    let nome = prompt("Digite seu nome:");
+    
     //PROCESSAMENTO
-
+    function cumprimentar(nome) {
+        if (!nome || !nome.trim()) return "Bom dia, Visitante!";
+        return "Bom dia, " + nome.trim() + "!";
+    }
+    let mensagem = cumprimentar(nome);
 
     //SAÍDA
-    
+    alert(mensagem);
 </script>

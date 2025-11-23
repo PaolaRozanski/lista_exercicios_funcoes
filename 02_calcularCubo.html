@@ -6,11 +6,18 @@
     */
 
     //ENTRADA
-
+    let nume;
+    do {
+        nume = Number(prompt(`Informe um número inteiro`))
+    } while (!Number.isInteger(nume));
+   
 
     //PROCESSAMENTO
-
-
+    function cubo (nume) {
+        let cubo1 = nume * nume * nume
+        return `O cubo do número ${nume} é ${cubo1}`
+    }
+      let mensagem = cubo(nume);
     //SAÍDA
-
+    alert(mensagem)
 </script>
