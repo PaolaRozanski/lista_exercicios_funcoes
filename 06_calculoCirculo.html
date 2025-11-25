@@ -8,11 +8,18 @@
     */
 
     //ENTRADA
-
+    let r = Number(prompt("Digite o raio do círculo:"));
 
     //PROCESSAMENTO
-
+    function areaCirculo(raio) {
+        return Math.PI * raio * raio;
+    }
+    function perimetroCirculo(raio) {
+        return 2 * Math.PI * raio;
+    }
+    let area = areaCirculo(r);
+    let perimetro = perimetroCirculo(r);
 
     //SAÍDA
-
+    lert(`Área: ${area} \nPerímetro: ${perimetro}`);
 </script>

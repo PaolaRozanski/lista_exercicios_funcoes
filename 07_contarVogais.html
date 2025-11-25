@@ -7,14 +7,23 @@
     */
 
     //ENTRADA
-    let letra;
-    do {
-        letra = (prompt(`Informe uma palavra`)).trim.toLowerCase()
-    } while (!String.isInteger(letra));
+    let palavra = prompt("Digite uma palavra:");
 
     //PROCESSAMENTO
+     function contarVogais(texto) {
+        let vogais = "aeiouAEIOU";
+        let contador = 0;
 
+        for (let i = 0; i < texto.length; i++) {
+            if (vogais.includes(texto[i])) {
+                contador++;
+            }
+        }
+
+        return contador;
+    }
+    let total = contarVogais(palavra);
 
     //SAÍDA
-
+    alert(`Quantidade de vogais: ${total}`);
 </script>

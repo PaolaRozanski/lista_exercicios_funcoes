@@ -6,11 +6,28 @@
     */
 
     //ENTRADA
-
+    let frase = prompt("Digite uma frase:");
+    let letra = prompt("Digite a letra que deseja contar:");
 
     //PROCESSAMENTO
+    function contarLetra(frase, letra) {
+        let contador = 0;
+
+        // Deixar tudo minúsculo para ignorar maiúsculas/minúsculas
+        frase = frase.toLowerCase();
+        letra = letra.toLowerCase();
+
+        for (let i = 0; i < frase.length; i++) {
+            if (frase[i] === letra) {
+                contador++;
+            }
+        }
+
+        return contador;
+    }
+     let total = contarLetra(frase, letra);
 
 
     //SAÍDA
-
+    alert(`A letra ${letra} aparece ${total} vezes na frase.`);
 </script>

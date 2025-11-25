@@ -6,11 +6,15 @@
     */
 
     //ENTRADA
-
+    let Fahrenheit = Number(prompt("Digite a temperatura em Fahrenheit:"));
 
     //PROCESSAMENTO
-
+    function converter(f) {
+        return (9 * f + 160) / 5;
+    }
+    let celsius = converter(Fahrenheit);
 
     //SAÍDA
+    alert(`A temperatura em Celcius é: ${celsius}`);
 
 </script>
